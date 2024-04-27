@@ -3,7 +3,11 @@ html {
   width: 100%;
 }
 
-body{
-  background-color:aquamarine;
-  color: darkcyan;
+body {
+  background-color: aquamarine;
+  color: darkblue
+}
+/* 글꼴설정 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Black Han Sans", sans-serif;
 }
