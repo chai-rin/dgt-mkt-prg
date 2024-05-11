@@ -30,7 +30,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main style="width:1000px; margin: 0; 0 auto;">
       <section>
         <h2>Headline</h2>
         <article id="article1">
@@ -41,9 +41,9 @@
        </article>
         <article id="article2">
           <h1>국민대학교 교정에서 푸른 벚꽃 발견되어 충격</h1>
-          <p> 2024년 4월, 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
-          <p> 2024년 4월, 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
-          <p> 2024년 4월, 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
+          <p class="p-thin"> 2024년 4월, 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
+          <p class="p-normal"> 2024년 4월, 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
+          <p class="p-bold"> 2024년 4월, 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
          </article>
        </section>
 
@@ -126,7 +126,57 @@
           <button type="reset">초기화</button>
         </form>
       </section>
+
+      <style>
+        .div-square {
+          width: 100px;
+          height: 100px;
+        }
+        .sq-pd {
+          /*padding: 10px;*/
+          /*padding: 10px 20px;*/
+          padding: 10px 20px 30px;
+        }
+        .sq-mg {
+          margin: 10px 10px 10px 5px;
+        }
+        .div-center {
+          margin: 0px auto;
+          width: 25;
+        }
+
+        
+      </style>
+      <section>
+        <div class="div-square" style="background-color: lightblue;">1</div>
+        <div class="div-square sq-pd" style="background-color: lightsalmon;">2</div>
+        <div class="div-square sq-mg" style="background-color: lightgray;">3</div>
+        <div class="div-square sq-center" style="background-color: lightyellow;">4</div>
+      </section>
+      <style>
+       .flex-container {
+       display: flex;
+       width:295px;
+       height: 120px;
+         /*
+       flex-direction: row;
+       flex-wrap: nowrap;
+         */
+         flex-flow: column wrap;
+       }
+       .flex-box {width: 100px; height:100px; text-align:center;}
+       .bg-red {background-color: red;}
+       .bg-blue {background-color: blue;}
+       .bg-gray {background-color: gray;}
+      </style>
+      <section class="flex-container">
+       <article class="flex-box bg-red">1</article>
+       <article class="flex-box bg-blue">2</article>
+       <article class="flex-box bg-gray">3</article>
+      </section>
     </main>
+
+    
     <aside>
       <h3>가장 많이 본 뉴스</h3>
       <ul>

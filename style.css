@@ -11,3 +11,20 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Black Han Sans", sans-serif;
 }
+
+p {
+  font-family: "Sunflower", sans-serif;
+}
+
+p-thin {
+  font-weight: 300;
+}
+
+p-normal {
+  /*font-weight: 500;*/
+  font-weight: normal;
+}
+
+p-bold{
+  font-weight: 700;
+}
